@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <include
+        android:id="@+id/container_progress_indicator"
+        layout="@layout/progress_indicator"
+        android:visibility="gone"
+        android:layout_marginVertical="@dimen/activity_vertical_margin_small"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_include"/>
+
+    <LinearLayout
+        android:id="@+id/confirm_visit_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/container_progress_indicator"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/visit_status_statement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm you want to visit:"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/confirm_service_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service Name"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/confirm_service_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorGrey"/>
+
+            <TextView
+                android:id="@+id/confirm_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textColor="@color/colorGrey"/>
+
+            <TextView
+                android:id="@+id/confirm_company_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorGrey"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/ic_bg_transparent_300x300">
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_transparent_300x300">
+                >
+
+                <TextView
+                    android:id="@+id/DatePickerLabel"
+                    android:inputType="phone"
+                    android:textSize="@dimen/input_text_size"
+                    android:maxLines="1"
+                    android:text="Choose date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorDanger"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:singleLine="true" />
+                <TextView
+                    android:id="@+id/DatePicker"
+                    android:inputType="phone"
+                    android:text="Date"
+                    android:textSize="@dimen/input_text_size"
+                    android:drawablePadding="5dp"
+
+                    android:drawableLeft="@drawable/ic_perm_contact_calendar_black1_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/button_focused"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_transparent_300x300">
+                >
+                <TextView
+                    android:id="@+id/TimePickerLabel"
+                    android:inputType="phone"
+                    android:text="Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/input_text_size"
+                    android:textColorHint="@color/colorDanger"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:singleLine="true" />
+                <TextView
+                    android:id="@+id/TimePicker"
+                    android:inputType="phone"
+                    android:text="Time"
+                    android:textSize="@dimen/input_text_size"
+                    android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="5dp"
+
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/button_focused"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin_small"
+            android:paddingEnd="@dimen/activity_horizontal_margin_small"
+            android:background="@drawable/ic_bg_transparent_300x300">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+            <Button
+                android:id="@+id/button_confirm_visit"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_vertical_margin_small"
+                android:drawableRight="@drawable/ic_perm_contact_calendar_black1_24dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:text="Confirm"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorAccent"
+                android:drawableLeft="@drawable/ic_queue_play_next_white_24dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_cancel_visit"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:padding="@dimen/activity_vertical_margin_small"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorGrey"
+                android:text="Cancel"
+                android:drawableLeft="@drawable/ic_remove_from_queue_white_24dp"
+                android:textStyle="bold" />
+
+         </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

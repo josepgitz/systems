@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/content_area"
+
+            android:background="@drawable/dialog_design"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="150dp"
+                android:paddingTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/question_icon"
+                android:id="@+id/cormfirmImage"
+                android:layout_height="150dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:id="@+id/successMessage"
+                android:layout_below="@+id/cormfirmImage"
+                android:text="QKut will send you a one time verification code Please Input the code "
+
+                />
+           <EditText
+               android:layout_width="200dp"
+               android:layout_below="@id/successMessage"
+               android:layout_centerHorizontal="true"
+               android:layout_margin="5dp"
+               android:inputType="number"
+               android:textColor="@color/colorAccent"
+               android:textAlignment="center"
+               android:layout_height="50dp"
+               android:id="@+id/confirmSessionCode"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:id="@+id/dialogFooter"
+            android:layout_below="@id/content_area"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/contentHeld"
+
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Confirm"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/ComfirmButton"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="wrap_content"
+                     />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

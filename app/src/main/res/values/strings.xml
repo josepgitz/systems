@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">qkut</string>
+    <string name="app_platform">android</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hi Guest</string>
+    <string name="nav_header_subtitle">Welcome to qkut!</string>
+    <string name="nav_header_desc">Smart Queue App</string>
+    <string name="action_settings">Settings</string>
+    <string name="shared_preference_name">qkutvms_shared_preferences</string>
+    <string name="shared_preference_username_key">user_person_email</string>
+    <string name="shared_preference_fullname_key">person_email</string>
+    <string name="shared_preference_password_key">user_person_password</string>
+    <string name="shared_preference_auth_access_token_key">user_auth_access_token</string>
+    <string name="shared_preference_auth_token_type_key">user_auth_token_type</string>
+    <string name="shared_preference_auth_token_expires_at_key">expires_at</string>
+    <string name="shared_preference_user_qr_id">user_qr_id</string>
+    <string name="shared_preference_user_qrcode">user_qrcode</string>
+    <string name="shared_preference_remember_me_key">user_person_remember_me</string>
+    <string name="shared_preference_profile_picture_path">user_profile_picture_path</string>
+    <string name="underlined_text"><u>I\'m underlined</u></string>
+    <!-- Search -->
+    <string name="search_hint">Search for service or place</string>
+
+    <!--Menu links-->
+    <string name="menu_link_places">Places</string>
+    <string name="menu_link_queues">Queues</string>
+    <string name="menu_link_alerts">Alerts</string>
+
+    <!--Menu links account-->
+    <string name="menu_link_login">Login</string>
+    <string name="menu_link_register">Register</string>
+    <string name="menu_link_manage">Manage</string>
+
+    <!-- app links -->
+    <string name="app_base_link">http://qkut.co.ke</string>
+    <string name="api_getplaces_guest_link">api/listBusinesses</string>
+    <string name="api_getsectors_guest_link">api/listSectors</string>
+    <string name="api_getplaces_auth_link">api/auth/listBusinesses</string>
+    <string name="api_getsectors_auth_link">api/auth/listSectors</string>
+    <string name="url_server_check">api/serverCheck</string>
+    <string name="url_get_countries">api/getCountries</string>
+    <string name="url_get_flag">api/getcountryflag/</string>
+    <string name="url_user_login">api/auth/login</string>
+    <string name="url_user_logout">api/auth/logout</string>
+    <string name="url_user_details">api/auth/user</string>
+    <string name="url_profile_picture">api/auth/user/getProfilePhoto</string>
+    <string name="url_user_qr">api/auth/user/getQR</string>
+    <string name="url_user_queue">api/auth/user/queue</string>
+    <string name="url_user_visit">api/auth/user/visit</string>
+    <string name="url_service_info">api/auth/service/info</string>
+    <string name="url_account_get_verification_code">api/verification</string>
+    <string name="url_account_registration">api/register</string>
+
+    <!-- Registration -->
+    <string name="registration">Register</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="verification_prompt">Enter the Code you will receive by SMS</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_fullname">Full name</string>
+    <string name="prompt_mobile">Mobile</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_remember_me">Remember me</string>
+    <string name="action_sign_in">Sign</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="action_logout">Logout</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="sign_up_label">Do not have an account yet?</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+</resources>
